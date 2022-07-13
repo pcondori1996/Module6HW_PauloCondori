@@ -1,6 +1,9 @@
 # Module6HW_PauloCondori
 Holder for Modules 6Homework
 
+Work Done:
+
+
 # 06 Server-Side APIs: Weather Dashboard
 
 ## Your Task

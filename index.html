@@ -29,16 +29,16 @@
           <button type="submit" for="UserText" class="btn btn-primary btn-block" id="searchButton">Search</button>
         </div>
 
-        <div>
+        <div class='stateButton'>
           <hr>
-          <button type="button" class="btn btn-secondary btn-block buttonMargin">Austin</button>
-          <button type="button" class="btn btn-secondary btn-block buttonMargin">Chicago</button>
-          <button type="button" class="btn btn-secondary btn-block buttonMargin">New York</button>
-          <button type="button" class="btn btn-secondary btn-block buttonMargin">Orlando</button>
-          <button type="button" class="btn btn-secondary btn-block buttonMargin">San Francisco</button>
-          <button type="button" class="btn btn-secondary btn-block buttonMargin">Settle</button>
-          <button type="button" class="btn btn-secondary btn-block buttonMargin">Denver</button>
-          <button type="button" class="btn btn-secondary btn-block buttonMargin">Atlana</button>
+          <button type="button" class="btn btn-secondary btn-block buttonMargin" id="Austin">Austin</button>
+          <button type="button" class="btn btn-secondary btn-block buttonMargin" id="Chicago">Chicago</button>
+          <button type="button" class="btn btn-secondary btn-block buttonMargin" id="NY">New York</button>
+          <button type="button" class="btn btn-secondary btn-block buttonMargin" id="Orlando">Orlando</button>
+          <button type="button" class="btn btn-secondary btn-block buttonMargin" id="SanFrancisco">San Francisco</button>
+          <button type="button" class="btn btn-secondary btn-block buttonMargin" id="Seatle">Seatle</button>
+          <button type="button" class="btn btn-secondary btn-block buttonMargin" id="Denver">Denver</button>
+          <button type="button" class="btn btn-secondary btn-block buttonMargin" id="Atlanta">Atlanta</button>
 
         </div>
 
@@ -58,7 +58,13 @@
             <h3>Temp: <span id="currentTempOfCity"></span></h3>
             <h3>Wind: <span id="currentWindOfCity"></span></h3>
             <h3>Humidity: <span id="currentHumidityOfCity"></span></h3>
-            <h3>UX Index: <span id="currentUXOfCity" class="btn btn-info"></span></h3>
+            <h3>UV Index: <span id="currentUXOfCity" class="btn btn-info">UV#</span></h3>
+            <h3>
+              UV Conditions: 
+              <button type="button" class="btn btn-success">Favorable</button>
+              <button type="button" class="btn btn-warning">Moderate</button>
+              <button type="button" class="btn btn-danger">Severe</button>
+            </h3>
           </div>
         </div>
 
@@ -70,46 +76,46 @@
 
             <div class="card">
               <div class="card-body">
-                <h1 class="card-title" id="dateDay1">Date</h1>
-                <h3 class="card-text" id="tempDay1">Temp</h3>
-                <h3 class="card-text" id="windDay1">Wind</h3>
-                <h3 class="card-text" id="HumidityDay1">Humidity</h3>
+                <h1 class="card-title" id="dateDay1">Date: </h1>
+                <h3 class="card-text" id="tempDay1">Temp: </h3>
+                <h3 class="card-text" id="windDay1">Wind: </h3>
+                <h3 class="card-text" id="HumidityDay1">Humidity: </h3>
               </div>
             </div>
 
             <div class="card">
               <div class="card-body">
-                <h1 class="card-title" id="dateDay2">Date</h1>
-                <h3 class="card-text" id="tempDay2">Temp</h3>
-                <h3 class="card-text" id="windDay2">Wind</h3>
-                <h3 class="card-text" id="HumidityDay2">Humidity</h3>
+                <h1 class="card-title" id="dateDay2">Date: </h1>
+                <h3 class="card-text" id="tempDay2">Temp: </h3>
+                <h3 class="card-text" id="windDay2">Wind: </h3>
+                <h3 class="card-text" id="HumidityDay2">Humidity: </h3>
               </div>
             </div>
 
             <div class="card">
               <div class="card-body">
-                <h1 class="card-title" id="dateDay3">Date</h1>
-                <h3 class="card-text" id="tempDay3">Temp</h3>
-                <h3 class="card-text" id="windDay3">Wind</h3>
-                <h3 class="card-text" id="HumidityDay3">Humidity</h3>
+                <h1 class="card-title" id="dateDay3">Date: </h1>
+                <h3 class="card-text" id="tempDay3">Temp: </h3>
+                <h3 class="card-text" id="windDay3">Wind: </h3>
+                <h3 class="card-text" id="HumidityDay3">Humidity: </h3>
               </div>
             </div>
 
             <div class="card">
               <div class="card-body">
-                <h1 class="card-title" id="dateDay4">Date</h1>
-                <h3 class="card-text" id="tempDay4">Temp</h3>
-                <h3 class="card-text" id="windDay4">Wind</h3>
-                <h3 class="card-text" id="HumidityDay4">Humidity</h3>
-              </div>
+                <h1 class="card-title" id="dateDay4">Date: </h1>
+                <h3 class="card-text" id="tempDay4">Temp: </h3>
+                <h3 class="card-text" id="windDay4">Wind: </h3>
+                <h3 class="card-text" id="HumidityDay4">Humidity: </h3>
+              </div> 
             </div>
 
             <div class="card">
               <div class="card-body">
-                <h1 class="card-title" id="dateDay5">Date</h1>
-                <h3 class="card-text" id="tempDay5">Temp</h3>
-                <h3 class="card-text" id="windDay5">Wind</h3>
-                <h3 class="card-text" id="HumidityDay5">Humidity</h3>
+                <h1 class="card-title" id="dateDay5">Date: </h1>
+                <h3 class="card-text" id="tempDay5">Temp: </h3>
+                <h3 class="card-text" id="windDay5">Wind: </h3>
+                <h3 class="card-text" id="HumidityDay5">Humidity: </h3>
               </div>
             </div>
 
@@ -120,7 +126,9 @@
 
     </div>
   </div>
-
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
   <script src="./Assets/script.js"></script>
 </body>
