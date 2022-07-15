@@ -14,7 +14,7 @@ var userInput = textArea.value;
 
 searchButton.addEventListener("click", function () {
     let userInput = textArea.value;
-    let apiGeoLocater = 'http://api.openweathermap.org/geo/1.0/direct?q=' + userInput + '&limit=1&appid=96aab11cd848962acac2160b486f6080';
+    let apiGeoLocater = 'https://api.openweathermap.org/geo/1.0/direct?q=' + userInput + '&limit=1&appid=96aab11cd848962acac2160b486f6080';
     //http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}
     console.log(apiGeoLocater);
 
@@ -75,7 +75,7 @@ function GeoLocator(data) {
             //img weather icon code
             var IconHolder = document.createElement('img');
             var IconNum = oneCallData.daily[0].weather[0].icon;
-            IconHolder.src = 'http://openweathermap.org/img/wn/' + IconNum + '@2x.png';
+            IconHolder.src = 'https://openweathermap.org/img/wn/' + IconNum + '@2x.png';
             cityNDay.appendChild(IconHolder);
 
 
@@ -117,7 +117,7 @@ function GeoLocator(data) {
 
                 var IconElement = document.createElement('img');
                 var IconiNum = oneCallData.daily[i].weather[0].icon;
-                IconElement.src = 'http://openweathermap.org/img/wn/' + IconiNum + '@2x.png';
+                IconElement.src = 'https://openweathermap.org/img/wn/' + IconiNum + '@2x.png';
                 DayIDs[i].appendChild(IconElement);
 
 
@@ -142,7 +142,7 @@ stateButtons[0].addEventListener("click", function (event) {
     if (event.target.matches('.btn')) {
         let userInput = event.target.textContent;
         console.log(userInput);
-        let apiGeoLocater = 'http://api.openweathermap.org/geo/1.0/direct?q=' + userInput + '&limit=1&appid=96aab11cd848962acac2160b486f6080';
+        let apiGeoLocater = 'https://api.openweathermap.org/geo/1.0/direct?q=' + userInput + '&limit=1&appid=96aab11cd848962acac2160b486f6080';
 
 
         // fetch request gets a list of all the repos for the node.js organization
